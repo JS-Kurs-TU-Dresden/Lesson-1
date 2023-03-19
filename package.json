@@ -1,0 +1,15 @@
+{
+  "name": "lesson-1",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "First Lesson on JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nils Twelker",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^0.29.3"
+  }
+}
