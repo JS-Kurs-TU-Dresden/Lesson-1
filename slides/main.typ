@@ -148,9 +148,10 @@ let yourName
 - `null` #text([ for empty values ], fill: subdued)
 - `undefined` #text([ for variables that are not yet defined ], fill: subdued)
 
-== Basic Operators
+==
 
 #columns(2, [
+    === Basic Operators
     ```js
 let a = 9
 let b = 4
@@ -161,13 +162,9 @@ let product = a * b    // 36
 let quotient = a / b   // 2.25
 let remainder = a % b  // 1
 ```
-#colbreak()
-#hint("Remainder is the rest of a division") 
-])
-
-== Modify in place
-
-```js
+    #colbreak()
+    === Modify in place
+    ```js
 let a = 9
 let b = 4
 
@@ -176,7 +173,10 @@ a -= b // a = 5
 a *= b // a = 36
 a /= b // a = 2.25
 a %= b // a = 1
-```
+    ```
+])
+
+#hint("Remainder is the rest of a division") 
 
 == Increment and Decrement
 
