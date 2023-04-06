@@ -25,7 +25,18 @@
 )
 
 #show raw: it => [
-    #box(it, fill: jsBlack.lighten(10%), outset: (x: 2pt, y:6pt), radius: 5pt),
+    #box(it, fill: jsBlack.lighten(10%), outset: (x: 4pt, y:6pt), radius: 5pt)
+]
+
+#let hint = (it, full: false) => [
+    #if full [
+        #block([#text("tipp", fill: jsBlack)], fill: jsYellow.lighten(10%), outset: (x: 8pt, y:8pt), radius: (top:5pt))
+        #v(-14pt)
+        #block(it, fill: jsBlack.lighten(10%), outset: (x: 8pt, y:8pt), radius: (bottom: 5pt, top-right: 5pt))
+    ] else [
+        #text([Tipp: ], fill: jsYellow.lighten(10%))
+        #it
+    ]
 ]
 
 == Overview
@@ -88,3 +99,69 @@ You need the following
 - Save the file as `index.js`
 - Open a terminal
 - Run `node index.js`
+
+== Variables
+
+```js
+let myAge = 16
+const myName = "Ben"
+```
+
+- Store Data
+- `let` #text([ can be changed ], fill: subdued)
+- `const` #text([ can not be changed ], fill: subdued)
+
+== Data Types
+
+```js
+let myAge = 16
+let myName = "Ben"
+let isAdult = true
+```
+
+- `number` #text([ for numbers ], fill: subdued)
+- `string` #text([ for text ], fill: subdued)
+- `boolean` #text([ for true or false ], fill: subdued)
+
+== Special Data Types
+
+```js
+let yourAge = null
+let yourName
+```
+
+- `null` #text([ for empty values ], fill: subdued)
+- `undefined` #text([ for variables that are not yet defined ], fill: subdued)
+
+== Basic Operators
+
+#columns(2, [
+    ```js
+let a = 9
+let b = 4
+
+let sum = a + b        // 13
+let difference = a - b // 5
+let product = a * b    // 36
+let quotient = a / b   // 2.25
+let remainder = a % b  // 1
+```
+
+#hint("Remainder is the rest of a division") 
+])
+
+== Comments
+
+#columns(2, [
+    ```js
+// This is a single line comment
+
+/*
+This is a
+multi line
+comment
+*/
+```
+
+#hint("Comments can help explain the code and ignored by the computer")
+])
