@@ -132,13 +132,13 @@
 
     set page(
         paper: "presentation-16-9",
-        margin: ( x: 1em, y: 4em ),
+        margin: ( x: 1em, y: 3em ),
         header: locate( loc => {
             if counter(page).at(loc).first() > 1 {
                 decoration("header", section.at(loc))
             }
         } ),
-        header-ascent: 3em,
+        header-ascent: 2em,
         footer: locate( loc => {
             if counter(page).at(loc).first() > 1 {
                 decoration("footer")[
@@ -149,7 +149,7 @@
                 ]
             }
         } ),
-        footer-descent: 3em,
+        footer-descent: 2em,
     )
 
     [

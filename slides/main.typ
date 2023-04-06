@@ -4,7 +4,7 @@
 #let jsYellow = rgb("f7df1e")
 #let jsBlack = rgb("#222")
 #let jsWhite = rgb("#ffffff")
-#let subdued = jsWhite.darken(50%)
+#let subdued = jsWhite.darken(40%)
 
 
 #set page(
@@ -49,6 +49,11 @@
 - Matrix: ...
 - GitHub
 
+== Helpful Links
+- #link("https://javascript.info/", "JavaScript.info")
+- #link("https://developer.mozilla.org/en-US/docs/Web/JavaScript", "MDN Web Docs")
+- #link("https://www.w3schools.com/js/", "W3Schools")
+
 == Verbal Language?
 
 Is there someone that only speaks English fluently?
@@ -75,6 +80,15 @@ Is there someone that only speaks English fluently?
 - Do you know JavaScript?
 - Prior experience with programming?
 
+== What is JavaScript?
+
+- A programming language
+- Created by Brendan Eich in 1995
+- Used in web browsers
+- Used in Node.js
+
+#hint("JavaScript is not related to Java")
+
 == What can you build with JavaScript?
 - An interactive website
 - A game
@@ -90,6 +104,7 @@ You need the following
 - VS Code #text([ for writing code ], fill: subdued)
 - Node.js #text([ for running JavaScript outside a browser ], fill: subdued)
 - Git #text([ for Version Control ], fill: subdued)
+- GitHub Account (next lesson) #text([ for sharing your code ], fill: subdued)
 
 == Running your first JavaScript code
 
@@ -146,8 +161,49 @@ let product = a * b    // 36
 let quotient = a / b   // 2.25
 let remainder = a % b  // 1
 ```
-
+#colbreak()
 #hint("Remainder is the rest of a division") 
+])
+
+== Modify in place
+
+```js
+let a = 9
+let b = 4
+
+a += b // a = 13
+a -= b // a = 5
+a *= b // a = 36
+a /= b // a = 2.25
+a %= b // a = 1
+```
+
+== Increment and Decrement
+
+#columns(2, [
+    ```js
+let a = 9
+let b = 4
+let c
+
+a++
+console.log(a) // 10
+c = b--
+console.log(b) // 3
+console.log(c) // 4
+    ```
+#colbreak()
+    #hint([
+        `++` and `--` can be written before or after the variable.
+        \
+        \
+        The difference is that the variable is changed before or after the value is used.
+
+        ```js
+c = --b
+        ```
+        would have set c to 3 aswell.
+    ])
 ])
 
 == Comments
@@ -162,6 +218,41 @@ multi line
 comment
 */
 ```
-
+#colbreak()
 #hint("Comments can help explain the code and ignored by the computer")
 ])
+
+// == Get user input
+
+// ```js
+// import * as readline from "node:readline"
+// import { stdin as input, stdout as output } from 'node:process';
+
+// const rl = readline.createInterface({ input, output });
+// let name = rl.question("What is your name? ")
+
+// console.log("Hello " + name)
+// rl.close()
+// ```
+
+== Git
+
+#columns(2, [
+    - Version Control
+    - Share your code
+    - Collaborate with others
+
+    Use the Source Control section in VS Code to commit and push your changes.
+
+    #colbreak()
+
+    #hint([
+        `Commit` is a bundle of changes like "added a new button to the page"
+    ])
+
+    #hint([
+        `Push` is the process of sending your commits to a remote repository like GitHub
+    ])
+])
+\
+Platforms:#link("https://github.com")[`GitHub`] or #link("https://gitlab.com")[`GitLab`] to share your code with others.
