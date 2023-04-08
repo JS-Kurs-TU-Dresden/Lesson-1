@@ -27,3 +27,19 @@ const d = 2 + '3' - 2
 
 const typeD = typeof d
 const valueD = d
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Do not (or do) change the code below. This code is only used for testing.
+
+export { typeA, valueA, typeB, valueB, typeC, valueC, typeD, valueD}
