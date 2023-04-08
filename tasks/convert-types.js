@@ -2,21 +2,33 @@
 
 const a = '123'
 
-const resultingNumber = Number(inputtedString)
+const resultingNumber = Number(a)
 
 // Convert the number below into a string
 
-const b = 123
+const b = 1233
 
-const resultingString = String(inputtedNumber)
+const resultingString = String(b)
 
 // Convert the string below into a boolean
 
 const c = 'true'
 
-const resultingBoolean = Boolean(inputtedString)
+const resultingBoolean = Boolean(c)
 
 // Convert the boolean below into a string
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Do not (or do) change the code below. This code is only used for testing.

@@ -79,6 +79,7 @@ Is there someone that only speaks English fluently?
 - Favorite Game?
 - Do you know JavaScript?
 - Prior experience with programming?
+- Do you have a goal you want to achieve with this course?
 
 == What is JavaScript?
 
@@ -104,7 +105,7 @@ You need the following
 - VS Code #text([ for writing code ], fill: subdued)
 - Node.js #text([ for running JavaScript outside a browser ], fill: subdued)
 - Git #text([ for Version Control ], fill: subdued)
-- GitHub Account (next lesson) #text([ for sharing your code ], fill: subdued)
+- GitHub Account #text([ for sharing your code ], fill: subdued)
 
 == Running your first JavaScript code
 
@@ -149,6 +150,8 @@ let yourName
 - `undefined` #text([ for variables that are not yet defined ], fill: subdued)
 
 ==
+
+
 
 #columns(2, [
     === Basic Operators
@@ -256,3 +259,30 @@ comment
 ])
 \
 Platforms:#link("https://github.com")[`GitHub`] or #link("https://gitlab.com")[`GitLab`] to share your code with others.
+
+== GitHub Classrooms
+
+- Assignments for you to complete
+- Submit your solutions
+- Get feedback
+- Track your progress
+
+After you have setup your GitHub account, you can join the classroom using the following link: \ 
+#link("https://classroom.github.com/a/Z69l9ZBQ", "https://classroom.github.com/a/Z69l9ZBQ")
+
+== Assignments
+
+- 1 assignment each lesson
+- **easy**, **medium** and **hard** tasks
+- More points for harder tasks
+- Goal are 100 Points per lesson
+
+== Assignment Structure
+
+- `/slide` - contains the slides for the lesson
+- `/tasks` - contains the tasks to complete
+- `/tests` - contains the tests for the tasks
+
+Each task will have a test associated with it. Try to pass the tests in order to complete the task.
+
+Run the test using `npm run test-[name]` where `[name]` is the name of the task.
