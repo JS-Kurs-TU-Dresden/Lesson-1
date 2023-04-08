@@ -10,23 +10,23 @@ const valueExample = 3
 
 const a = +'1245'
 
-const typeA = typeof a
-const valueA = a
+const typeA = ???
+const valueA = ???
 
 const b = 'b' + 2
 
-const typeB = typeof b
-const valueB = b
+const typeB = ???
+const valueB = ???
 
 const c = 2 + 'c'
 
-const typeC = typeof c
-const valueC = c
+const typeC = ???
+const valueC = ???
 
 const d = 2 + '3' - 2
 
-const typeD = typeof d
-const valueD = d
+const typeD = ???
+const valueD = ???
 
 
 

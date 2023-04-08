@@ -1,10 +1,27 @@
-const myNumber = 42;
-const myString = 'Hello World';
-const myBoolean = true;
+// Create the following variables:
+//
+// myConstantNumber
+// myConstantString
+// myConstantBoolean
+//
+// myChangeableNumber
+// myChangeableString
+// myChangeableBoolean
+//
+// The behavior of the variables should be like the name suggests
 
-let myChangeableNumber = 42;
-let myChangeableString = 'Hello World';
-let myChangeableBoolean = true;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -19,10 +36,16 @@ let myChangeableBoolean = true;
 
 // Do not (or do) change the code below. This code is only used for testing.
 
-export { myNumber, myString, myBoolean, myChangeableNumber, myChangeableString, myChangeableBoolean, changeVariables };
+export { myConstantNumber, myConstantString, myConstantBoolean, myChangeableNumber, myChangeableString, myChangeableBoolean, changeVariables, changeConstants };
 
 function changeVariables() {
     myChangeableNumber = 0;
     myChangeableString = '';
     myChangeableBoolean = false;
+}
+
+function changeConstants() {
+    myConstantNumber = 0;
+    myConstantString = '';
+    myConstantBoolean = false;
 }

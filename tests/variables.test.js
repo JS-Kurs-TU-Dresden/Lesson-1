@@ -1,12 +1,18 @@
 import { expect, test, describe } from 'vitest'
-import {changeVariables, myBoolean, myChangeableBoolean, myChangeableNumber, myChangeableString, myNumber, myString} from '../tasks/variables.js'
+import {changeVariables, changeConstants, myConstantBoolean, myChangeableBoolean, myChangeableNumber, myChangeableString, myConstantNumber, myConstantString} from '../tasks/variables.js'
 
 describe('variables', () => {
     
     test('constants', async () => {
-        expect(typeof myNumber).toEqual('number')
-        expect(typeof myString).toEqual('string')
-        expect(typeof myBoolean).toEqual('boolean')
+        expect(typeof myConstantNumber).toEqual('number')
+        expect(typeof myConstantString).toEqual('string')
+        expect(typeof myConstantBoolean).toEqual('boolean')
+
+        try {
+            changeConstants()
+        } catch (e) {
+            expect(e instanceof TypeError).toEqual(true)
+        }
     })
 
     test('changeable', async () => {

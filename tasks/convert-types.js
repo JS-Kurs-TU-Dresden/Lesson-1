@@ -2,19 +2,19 @@
 
 const a = '123'
 
-const resultingNumber = Number(a)
+const resultingNumber = ???
 
 // Convert the number below into a string
 
 const b = 1233
 
-const resultingString = String(b)
+const resultingString = ???
 
 // Convert the string below into a boolean
 
 const c = 'true'
 
-const resultingBoolean = Boolean(c)
+const resultingBoolean = ???
 
 // Convert the boolean below into a string
 
