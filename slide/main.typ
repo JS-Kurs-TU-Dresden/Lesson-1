@@ -109,11 +109,13 @@ You need the following
 
 == Running your first JavaScript code
 
+- Create A folder
 - Open VS Code
-- Create a new file
-- Write #raw("console.log(\"Hello World\")", lang: "js")
-- Save the file as `index.js`
-- Open a terminal
+- Click on `File > Open Folder`
+- Select the folder you created
+- Create a new file called `index.js`
+- Write #raw("console.log(\"Hello World\")", lang: "js") and save
+- Open a terminal in VS Code
 - Run `node index.js`
 
 == Variables
@@ -245,7 +247,7 @@ comment
     - Share your code
     - Collaborate with others
 
-    Use the Source Control section in VS Code to commit and push your changes.
+    [icon!] Use the Source Control section in VS Code to commit and push your changes.
 
     #colbreak()
 
@@ -270,6 +272,11 @@ Platforms:#link("https://github.com")[`GitHub`] or #link("https://gitlab.com")[`
 After you have setup your GitHub account, you can join the classroom using the following link: \ 
 #link("https://classroom.github.com/a/Z69l9ZBQ", "https://classroom.github.com/a/Z69l9ZBQ")
 
+- Auth github classroom
+- refresh page
+- accept assignment
+- click on `open in VS Code`
+
 == Assignments
 
 - 1 assignment each lesson
@@ -284,5 +291,12 @@ After you have setup your GitHub account, you can join the classroom using the f
 - `/tests` - contains the tests for the tasks
 
 Each task will have a test associated with it. Try to pass the tests in order to complete the task.
-
+Run `npm i`
 Run the test using `npm run test-[name]` where `[name]` is the name of the task.
+
+== After finishing a task
+
+- Commit your changes
+- Push your changes
+
+#hint("The name of the commit could be the name of the task")

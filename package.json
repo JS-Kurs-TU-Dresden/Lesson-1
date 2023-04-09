@@ -5,17 +5,13 @@
   "description": "First Lesson on JavaScript",
   "main": "index.js",
   "scripts": {
-    "test-convert-types": "vitest watch convert-types",
-    "test-basic-math": "vitest watch basic-math",
-    "test-basic-string": "vitest watch basic-string",
-    "test-variables": "vitest watch variables",
-    "test-fix-variables": "vitest watch fix-variables",
-    "test-edgecases": "vitest watch edgecases"
+    "test": "node tests.js"
   },
   "author": "Nils Twelker",
   "license": "ISC",
   "devDependencies": {
     "@vitest/ui": "^0.29.8",
+    "vite": "^4.2.1",
     "vitest": "^0.29.3"
   }
 }
