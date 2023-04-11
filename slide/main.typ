@@ -48,11 +48,7 @@
 == Questions after the lesson?
 - Matrix: ...
 - GitHub
-
-== Helpful Links
-- #link("https://javascript.info/", "JavaScript.info")
-- #link("https://developer.mozilla.org/en-US/docs/Web/JavaScript", "MDN Web Docs")
-- #link("https://www.w3schools.com/js/", "W3Schools")
+- Discord?
 
 == Verbal Language?
 
@@ -83,7 +79,6 @@ Is there someone that only speaks English fluently?
 
 == What is JavaScript?
 
-- A programming language
 - Created by Brendan Eich in 1995
 - Used in web browsers
 - Used in Node.js
@@ -247,7 +242,7 @@ comment
     - Share your code
     - Collaborate with others
 
-    [icon!] Use the Source Control section in VS Code to commit and push your changes.
+    #box([#rect([#image("./git.png", width: 24pt)], fill: jsWhite, radius: 30pt)], baseline: 8pt) Use the Source Control section in VS Code to commit and push your changes.
 
     #colbreak()
 
@@ -269,13 +264,15 @@ Platforms:#link("https://github.com")[`GitHub`] or #link("https://gitlab.com")[`
 - Get feedback
 - Track your progress
 
+== GitHub Classrooms
+
 After you have setup your GitHub account, you can join the classroom using the following link: \ 
 #link("https://classroom.github.com/a/Z69l9ZBQ", "https://classroom.github.com/a/Z69l9ZBQ")
 
 - Auth github classroom
 - refresh page
 - accept assignment
-- click on `open in VS Code`
+- click on `Open in VS Code`
 
 == Assignments
 
@@ -290,12 +287,22 @@ After you have setup your GitHub account, you can join the classroom using the f
 - `/tasks` - contains the tasks to complete
 - `/tests` - contains the tests for the tasks
 
-Each task will have a test associated with it. Try to pass the tests in order to complete the task.
-Run `npm i`
-Run the test using `npm run test-[name]` where `[name]` is the name of the task.
+Each task will have a test associated with it. Try to pass the tests in order to complete the task. \
+Run `npm i` #text("to install the dependencies.", fill: subdued) \
+Run `npm run test-[name]` where `[name]` is the name of the task.
+The test will tell you if you passed or failed.
+
+== Helpful Links
+- #link("https://javascript.info/", "JavaScript.info")
+- #link("https://developer.mozilla.org/en-US/docs/Web/JavaScript", "MDN Web Docs")
+- #link("https://www.w3schools.com/js/", "W3Schools")
+
+#hint("Or just google it, google is your friend!")
 
 == After finishing a task
 
+- #box([#rect([#image("./git.png", width: 24pt)], fill: jsWhite, radius: 30pt)], baseline: 8pt) Open the Source Control section in VS Code
+- Write a commit message
 - Commit your changes
 - Push your changes
 
