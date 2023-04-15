@@ -1,4 +1,5 @@
 // Try to figure out the type and resulting values of the variables below using the `typeof` operator and the console.
+// typeof keyword explained: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
 
 // example
 const example = 1 + 2
@@ -42,4 +43,4 @@ const valueD = ???
 
 // Do not (or do) change the code below. This code is only used for testing.
 
-export { typeA, valueA, typeB, valueB, typeC, valueC, typeD, valueD}
+export { typeA, valueA, typeB, valueB, typeC, valueC, typeD, valueD }

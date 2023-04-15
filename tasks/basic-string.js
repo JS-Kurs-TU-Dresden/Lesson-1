@@ -1,3 +1,6 @@
+// Info about Strings: https://javascript.info/types#string
+// Info about String concatenation: https://javascript.info/operators#string-concatenation-with-binary
+
 const firstName = 'John';
 const lastName = 'Doe';
 

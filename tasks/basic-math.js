@@ -1,3 +1,5 @@
+// Further info: https://javascript.info/operators#maths
+
 const a = 2;
 const b = 3;
 

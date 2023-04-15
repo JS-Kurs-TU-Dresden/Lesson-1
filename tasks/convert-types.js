@@ -1,4 +1,5 @@
 // Convert the string below into a number
+// Further info: https://javascript.info/type-conversions
 
 const a = '123'
 

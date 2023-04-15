@@ -19,7 +19,7 @@
 #show: slides.with(
     author: "Nils Twelker",
     title: "Introcution to JavaScript",
-    short-title: "Introcution to JavaScript",
+    short-title: " JavaScript Lesson 1",
     date: "March 2023",
     color: jsYellow,
 )
@@ -42,8 +42,8 @@
 == Overview
 
 - 12 Sessions
-- every Wednesday, 13:00 - 14:30
-- Room: APB/00X
+- every Wednesday, 11:10 - 12:40
+- Room: APB/E065
 
 == Questions after the lesson?
 - Matrix: ...
@@ -135,6 +135,22 @@ let isAdult = true
 - `number` #text([ for numbers ], fill: subdued)
 - `string` #text([ for text ], fill: subdued)
 - `boolean` #text([ for true or false ], fill: subdued)
+
+== Converting Data Types
+
+```js
+const a = String(16)    // a = "16"
+const b = Number("16")  // b = 16
+const c = Boolean(16)   // c = true
+const d = Boolean(0)    // d = false
+const e = Boolean(1)    // e = true
+```
+
+#hint([\
+    `String()` #text([ converts to a string ], fill: subdued)\
+    `Number()` #text([ converts to a number ], fill: subdued)\
+    `Boolean()` #text([ converts to a boolean ], fill: subdued)
+])
 
 == Special Data Types
 
