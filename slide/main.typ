@@ -16,6 +16,10 @@
     fill: jsWhite,
 )
 
+#show link: it => [
+    #text(underline(it), fill: jsYellow)
+]
+
 #show: slides.with(
     author: "Nils Twelker",
     title: "Introcution to JavaScript",
@@ -40,19 +44,18 @@
 ]
 
 == Overview
-
 - 12 Sessions
-- every Wednesday, 11:10 - 12:40
+- every Wednesday 3. DS, 11:10 - 12:40
 - Room: APB/E065
-
-== Questions after the lesson?
-- Matrix: ...
-- GitHub
-- Discord?
 
 == Verbal Language?
 
 Is there someone that only speaks English fluently?
+
+== Questions after the lesson?
+- GitHub
+- Discord?
+- Matrix?
 
 == Goals
 
@@ -270,7 +273,7 @@ comment
         `Push` is the process of sending your commits to a remote repository like GitHub
     ])
 ])
-\
+
 Platforms:#link("https://github.com")[`GitHub`] or #link("https://gitlab.com")[`GitLab`] to share your code with others.
 
 == GitHub Classrooms
@@ -283,11 +286,12 @@ Platforms:#link("https://github.com")[`GitHub`] or #link("https://gitlab.com")[`
 == GitHub Classrooms
 
 After you have setup your GitHub account, you can join the classroom using the following link: \ 
-#link("https://classroom.github.com/a/Z69l9ZBQ", "https://classroom.github.com/a/Z69l9ZBQ")
+#link("https://classroom.github.com/a/NDTDeLoR", "https://classroom.github.com/a/NDTDeLoR")
 
-- Auth github classroom
-- refresh page
-- accept assignment
+- Allow Classrooms to access your GitHub account
+- Select your Name from the list
+- Accept the assignment
+- Refresh the page
 - click on `Open in VS Code`
 
 == Assignments
@@ -299,21 +303,22 @@ After you have setup your GitHub account, you can join the classroom using the f
 
 == Assignment Structure
 
-- `/slide` - contains the slides for the lesson
-- `/tasks` - contains the tasks to complete
-- `/tests` - contains the tests for the tasks
+- `/slide` - slides for the lesson
+- `/tasks` - tasks to complete
+- `/tests` - tests for the tasks
 
 Each task will have a test associated with it. Try to pass the tests in order to complete the task. \
-Run `npm i` #text("to install the dependencies.", fill: subdued) \
-Run `npm run test-[name]` where `[name]` is the name of the task.
+Run `npm i` to install the dependencies. \
+Run `npm run test [name]` where `[name]` is the name of the task.
 The test will tell you if you passed or failed.
 
 == Helpful Links
-- #link("https://javascript.info/", "JavaScript.info")
+This course is inspired by #link("https://javascript.info/", "JavaScript.info") so big thanks to them for their great content!
+
 - #link("https://developer.mozilla.org/en-US/docs/Web/JavaScript", "MDN Web Docs")
 - #link("https://www.w3schools.com/js/", "W3Schools")
 
-#hint("Or just google it, google is your friend!")
+#hint([Or just google it! #emoji.face.wink])
 
 == After finishing a task
 

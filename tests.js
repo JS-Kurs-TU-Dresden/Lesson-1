@@ -1,17 +1,17 @@
-import {readdir} from 'fs/promises';
+import { readdir } from 'fs/promises';
 import { startVitest } from 'vitest/node'
 
-if(process.argv.length < 3) {
+if (process.argv.length < 3) {
     console.log("Usage: npm run <testname>");
     process.exit(1);
 }
 
 const name = process.argv[2];
-const once = process.argv[3] === '--once';
+const once = process.argv[3] === 'once';
 
-const validTests = (await readdir('./tests', {withFileTypes: true})).filter(dirent => !dirent.isDirectory()).map(dirent => dirent.name.replace('.test.js', ''));
+const validTests = (await readdir('./tests', { withFileTypes: true })).filter(dirent => !dirent.isDirectory()).map(dirent => dirent.name.replace('.test.js', ''));
 
-if(!validTests.includes(name)) {
+if (!validTests.includes(name)) {
     console.log(`Invalid test name: ${name}. Valid tests are:\n- ${validTests.join('\n- ')}`);
     process.exit(1);
 }
